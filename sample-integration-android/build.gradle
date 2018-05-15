@@ -5,17 +5,20 @@ configurations {
 }
 
 dependencies {
-    compile project(':integration-android')
-    compile 'org.bitcoinj:bitcoinj-core:0.12.3'
+    implementation project(':integration-android')
+    implementation 'org.bitcoinj:bitcoinj-core:0.14.7'
 }
 
 android {
-    compileSdkVersion 'android-15'
-    buildToolsVersion '26.0.3'
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
 
     lintOptions { abortOnError false }
 
     defaultConfig {
+        targetSdkVersion 27
+        minSdkVersion 21
+
         dexOptions {
             preDexLibraries false
         }

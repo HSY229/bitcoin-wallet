@@ -2,14 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="de.schildbach.wallet"
-    android:installLocation="internalOnly"
-    android:versionCode="363"
-    android:versionName="6.23" >
-
-    <uses-sdk
-        android:minSdkVersion="19"
-        android:targetSdkVersion="27"
-        tools:ignore="OldTargetApi" />
+    android:installLocation="internalOnly" >
 
     <!-- normal permissions -->
     <uses-permission android:name="android.permission.INTERNET" />
